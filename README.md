@@ -35,3 +35,30 @@ The following directories are backed up:
 - **pv (Pipe Viewer)**: This is optional but recommended for visual progress. Install it using the following command:
   ```bash
   sudo apt-get install pv
+
+
+
+  ## Usage
+
+1. **Download or Copy the Script**:
+   - Copy the script into a file named `backup.sh`. You can use a text editor or download it from your repository.
+
+2. **Make the Script Executable**:
+   - Open your terminal and run the following command to make the script executable:
+     ```bash
+     chmod +x backup.sh
+     ```
+
+3. **Run the Script**:
+   - Execute the script with the following command:
+     ```bash
+     ./backup.sh
+     ```
+   - The script will start backing up the directories specified in the `directories` array. Backup `.zip` files will be created on your Desktop with names like `Documents_backup.zip`, `Music_backup.zip`, etc.
+
+4. **Optional: Install `pv`**:
+   - If you want to use the progress bar feature, make sure `pv` is installed. You can install it using:
+     ```bash
+     sudo apt-get install pv
+     ```
+
